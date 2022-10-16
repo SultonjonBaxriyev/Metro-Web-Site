@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+/* One */
+#one {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    color: #fff;
+}
+#one img {
+    width: 200px;
+}
+#one .container {
+    justify-content: space-between !important;
+}
+#one ul {
+    display: flex;
+    list-style: none;
+    transition: .8s;
+}
+#one ul li {
+    margin-left: 35px;
+}
+#one .button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #646464;
+    color: #fff;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 360px;
+    left: 220px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: .8s;
+}
+#one .button i {
+    color: #fff;
+}
+#one ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+@media (max-width: 768px) {
+    #one .container {
+        width: 100%;
+        display: flex;
+    }
+    #one .button {
+        display: flex;
+        left: 10px;
+    }
+    #one .button.show {
+        left: 220px;
+    }
+    #one {
+        height: 55px;
+        background: #000;
+    }
+    #one ul {
+        display: block;
+        width: 100px;
+        background: rgba(0, 0, 0, 0.474);
+        height: 400px;
+        width: 200px;
+        padding: 25% 10%;
+        margin-top: 5px;
+        position: fixed;
+        right: 100%;
+    }
+    #one ul.active {
+        right: 60%;
+    }
+    #one ul li a {
+        font-size: 20px;
+    }
+    #one ul li {
+        margin-left: 10px;
+    }
+    #one {
+        margin: 0 auto;
+        background: #646464a8;
+    }
+}
+/* Two */
+#two {
+    margin-top: 75px;
+}
+#two .row {
+    align-items: center !important;
+}
+#two .container {
+    background: #6464643a;
+    padding: 10px;
+}
+/* Three */
+#three {
+    margin-top: 15px;
+}
+#three .bg1 {
+    background: url(../imgs/electronics_2-360x432.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 450px;
+}
+#three .bg2 {
+    background: url(../imgs/444.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    justify-content: end;
+    align-items: flex-end;
+    height: 450px;
+}
+@media (max-width: 768px) {
+    #three .bg2 {
+        background-size: cover;
+    }
+}
+/* Four */
+#four {
+    margin-top: 15px;
+}
+#four .row1 {
+    flex-direction: row;
+}
+#four .bgvr {
+    background: url(../imgs/vr.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    align-items: flex-end;
+}
+#four h1, h3 {
+    color: #646464;
+}
+#four .bgkey {
+    background: url(../imgs/p_3-360x432.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+#four .bgspeaker {
+    background: url(../imgs/bluetooth_speaker-360x432.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 400px;
+}
+#four .bgheadphones {
+    background: url(../imgs/p_5-111-360x432.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+#four .bglense {
+    background: url(../imgs/l-360x432.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 400px;
+}
+/* Five */
+#five {
+    margin-top: 15px;
+    flex-direction: row;
+}
+#five h1, h3 {
+    color: #646464;
+}
+#five .bgbluetooth {
+    background: url(../imgs/electronics_2-360x432.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+#five .bgcollection {
+    background: url(../imgs/p_11-360x432.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+#five .bgwatch {
+    background: url(../imgs/p_4-1-360x432.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 400px;
+}
+#five .bgcard {
+    background: url(../imgs/card-360x432.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+}
+/* Six */
+#six {
+    text-align: center;
+    margin-top: 15px;
+}
+#six .eaf {
+    display: block !important;
+    margin: 0 auto;
+    margin-left: 5%;
+}
+#six .eaf input {
+    width: 380px;
+    padding: 5px 10px;
+    border: 1px solid #646464;
+    border-radius: 10px;
+}
+#six .eaf .btn {
+    margin-top: 5px;
+}
+/* Seven */
+#seven .bgfashion {
+    background: url(../imgs/blog-10-2-465x290.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+#seven .bgfashion h6 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+}
+#seven .bgfashion1 {
+    background: url(../imgs/blog-10-1-465x290.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+#seven .bgfashion1 h6 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+}
+#seven .bgring {
+    background: url(../imgs/blog-j-465x290.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    display: flex;
+    align-items: flex-end;
+}
+#seven .bgring h6 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    color: #000;
+    padding: 5px;
+    border-radius: 50%;
+    display: flex;
+}
+/* Eight */
+#eight {
+    background: #000;
+    color: #fff;
+    margin-top: 15px;
+}
+#eight h1 {
+    border-bottom: 5px solid #fff;
+    margin-bottom: 5px;
+}
+#eight h5 {
+    color: #fff;
+    margin-bottom: 5px;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+#eight ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+#eight ul li a {
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    padding: 5px 10px;
+    background: rgba(255, 255, 255, 0.448);
+}
+a {
+    transition: .3s;
+}
+/* Last */
+#last img {
+    width: 210px;
+    height: 200px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+@media (max-width: 768px) {
+    #last {
+        text-align: center;
+    }
+}
